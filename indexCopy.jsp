@@ -9,103 +9,101 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Updated Header -->
+    <!-- Header -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <span class="logo-text">Banco</span>
-                    <div class="logo-w">W</div>
+                    <img src="images/banco-w-logo.svg" alt="Banco W" class="logo-img">
                 </div>
-                
-                <div class="nav-center">
-                    <div class="search-container">
-                        <span class="search-icon">🔍</span>
-                        <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
-                    </div>
-                </div>
-                
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos y servicios</a></li>
+                    <li><a href="#construccion">Construcción</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#personas">Personas sin experiencia</a></li>
+                    <li><a href="#centro">Centro de ayuda</a></li>
+                </ul>
                 <div class="nav-buttons">
-                    <div class="office-selector">
-                        <span>💼</span>
-                        <span>Pagos en línea</span>
-                        <span>▶</span>
-                    </div>
-                    <button class="btn btn-login">Entrar</button>
+                    <button class="btn btn-login">Iniciar sesión</button>
+                    <button class="btn btn-register">Regístrate</button>
                 </div>
             </div>
         </nav>
-        
-        <!-- Main Navigation -->
-        <nav class="main-nav">
-            <ul class="nav-menu">
-                <li class="active"><a href="#inicio">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Quiénes somos</a></li>
-                        <li><a href="#">Fundación</a></li>
-                        <li><a href="#">WWB Colombia</a></li>
-                        <li><a href="#">Trabaja con nosotros</a></li>
-                        <li><a href="#">Sala de prensa</a></li>
-                        <li><a href="#">Línea de transparencia</a></li>
-                        <li><a href="#">Gestión Sostenible</a></li>
-                        <li><a href="#">Notificaciones Judiciales</a></li>
-                        <li><a href="#">Licitación de seguros</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Productos y servicios <span class="dropdown-arrow">▼</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Créditos</a></li>
-                        <li><a href="#">Tarjeta de crédito</a></li>
-                        <li><a href="#">Productos de ahorro e inversión</a></li>
-                        <li><a href="#">Giros internacionales</a></li>
-                        <li><a href="#">Seguros</a></li>
-                    </ul>
-                </li>
-		<li class="dropdown">
-		    <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
-		    <ul class="dropdown-menu">
-			<li><a href="#">Atención</a></li>
-			<li><a href="#">Información</a></li>
-			<li><a href="#">Educación financiera</a></li>
-		    </ul>
-                </li>	
-		<li class="dropdown">
-		    <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
-		    <ul class="dropdown-menu">
-			<li><a href="#">Refiere y gana</a></li>
-		    </ul>
-		</li>
-
-		<li class="dropdown">
-		    <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
-		    <ul class="dropdown-menu">
-			<li><a href="#">Documentación societaria</a></li>
-			<li><a href="#">Accionistas</a></li>
-			<li><a href="#">Junta directiva y alta gerencia</a></li>
-			<li><a href="#">Información relevante</a></li>
-			<li><a href="#">Información financiera</a></li>
-			<li><a href="#">Documentación de gobierno corporativo</a></li>
-		    </ul>
-		</li>
-
-		<li class="dropdown">
-		    <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
-		    <ul class="dropdown-menu">
-			<li><a href="#">Canales presenciales</a></li>
-			<li><a href="#">Canales no presenciales</a></li>
-		    </ul>
-		</li>
-            </ul>
-        </nav>
     </header>
 
-
-    <!-- Enhanced Hero Section -->
+    <!-- Main Hero Section -->
     <main class="main-content">
         <section class="hero">
+            <header class="hero-header">
+                <nav class="hero-nav">
+                    <ul class="hero-menu">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Quiénes somos</a></li>
+                                <li><a href="#">Fundación</a></li>
+                                <li><a href="#">WWB Colombia</a></li>
+                                <li><a href="#">Trabaja con nosotros</a></li>
+                                <li><a href="#">Sala de prensa</a></li>
+                                <li><a href="#">Línea de transparencia</a></li>
+                                <li><a href="#">Gestión Sostenible</a></li>
+                                <li><a href="#">Notificaciones Judiciales</a></li>
+                                <li><a href="#">Licitación de seguros</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Productos y servicios <span class="dropdown-arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Créditos</a></li>
+                                <li><a href="#">Tarjeta de crédito</a></li>
+                                <li><a href="#">Productos de ahorro e inversión</a></li>
+                                <li><a href="#">Giros internacionales</a></li>
+                                <li><a href="#">Seguros</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Atención</a></li>
+                                <li><a href="#">Información</a></li>
+                                <li><a href="#">Educación financiera</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Refiere y gana</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Documentación societaria</a></li>
+                                <li><a href="#">Accionistas</a></li>
+                                <li><a href="#">Junta directiva y alta gerencia</a></li>
+                                <li><a href="#">Información relevante</a></li>
+                                <li><a href="#">Información financiera</a></li>
+                                <li><a href="#">Documentación de gobierno corporativo</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Canales presenciales</a></li>
+                                <li><a href="#">Canales no presenciales</a></li>
+                            </ul>
+                        </li>
+                        <!-- Resto de items del menú -->
+                    </ul>
+                </nav>
+            </header>
+
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>¡Hola<span id="user-name-display"></span>!</h1>
@@ -115,25 +113,23 @@
                     <img src="images/hero-people.png" alt="Personas felices" class="hero-img">
                 </div>
             </div>
-
             <div class="hero-cards">
-                <div class="hero-card">
-                    <span class="card-icon">💳</span>
-                    <span class="card-title">Pago tarjeta de crédito</span>
+                <div class="card">
+                    <i class="icon-card"></i>
+                    <span>Tarjetas</span>
                 </div>
-                <div class="hero-card">
-                    <span class="card-icon">📊</span>
-                    <span class="card-title">CDT digital</span>
+                <div class="card">
+                    <i class="icon-credit"></i>
+                    <span>Créditos</span>
                 </div>
-                <div class="hero-card">
-                    <span class="card-icon">📈</span>
-                    <span class="card-title">Giros internacionales</span>
+                <div class="card">
+                    <i class="icon-investment"></i>
+                    <span>Inversiones</span>
                 </div>
             </div>
         </section>
-	
 
-	<!-- What are you looking for section -->
+        <!-- What are you looking for section -->
         <section class="search-section">
             <div class="container">
                 <h2>¿Qué estás buscando?</h2>
@@ -258,13 +254,8 @@
                 </div>
             </div>
         </section>
-
-        <!-- Rest of the existing sections (Search, Products, Articles, Club, Unique Products) -->
-        <!-- ... (keep all existing sections from original index.jsp) ... -->
-
     </main>
 
-    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
