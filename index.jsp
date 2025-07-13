@@ -64,40 +64,40 @@
                         <li><a href="#">Seguros</a></li>
                     </ul>
                 </li>
-		<li class="dropdown">
-		    <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
-		    <ul class="dropdown-menu">
-			<li><a href="#">Atención</a></li>
-			<li><a href="#">Información</a></li>
-			<li><a href="#">Educación financiera</a></li>
-		    </ul>
-                </li>	
-		<li class="dropdown">
-		    <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
-		    <ul class="dropdown-menu">
-			<li><a href="#">Refiere y gana</a></li>
-		    </ul>
-		</li>
+                <li class="dropdown">
+                    <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Atención</a></li>
+                        <li><a href="#">Información</a></li>
+                        <li><a href="#">Educación financiera</a></li>
+                    </ul>
+                        </li>	
+                <li class="dropdown">
+                    <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Refiere y gana</a></li>
+                    </ul>
+                </li>
 
-		<li class="dropdown">
-		    <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
-		    <ul class="dropdown-menu">
-			<li><a href="#">Documentación societaria</a></li>
-			<li><a href="#">Accionistas</a></li>
-			<li><a href="#">Junta directiva y alta gerencia</a></li>
-			<li><a href="#">Información relevante</a></li>
-			<li><a href="#">Información financiera</a></li>
-			<li><a href="#">Documentación de gobierno corporativo</a></li>
-		    </ul>
-		</li>
+                <li class="dropdown">
+                    <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Documentación societaria</a></li>
+                        <li><a href="#">Accionistas</a></li>
+                        <li><a href="#">Junta directiva y alta gerencia</a></li>
+                        <li><a href="#">Información relevante</a></li>
+                        <li><a href="#">Información financiera</a></li>
+                        <li><a href="#">Documentación de gobierno corporativo</a></li>
+                    </ul>
+                </li>
 
-		<li class="dropdown">
-		    <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
-		    <ul class="dropdown-menu">
-			<li><a href="#">Canales presenciales</a></li>
-			<li><a href="#">Canales no presenciales</a></li>
-		    </ul>
-		</li>
+                <li class="dropdown">
+                    <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Canales presenciales</a></li>
+                        <li><a href="#">Canales no presenciales</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
