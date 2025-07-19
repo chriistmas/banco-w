@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco W - Página Principal</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/quienes-somos.css">
 </head>
 <body>
     <!-- Updated Header -->
@@ -126,8 +126,8 @@
 	    <div class="container">
 		<div class="video-container">
 		    <div class="video-wrapper">
-			<video controls poster="images/video-thumbnail.jpg" class="about-video">
-			    <source src="videos/banco-w-about.mp4" type="video/mp4">
+			<video controls poster="../images/video-about-us.webp" class="about-video">
+			    <source src="../videos/banco-w-about.mp4" type="video/mp4">
 			    Tu navegador no soporta el elemento de video.
 			</video>
 			<div class="video-overlay">
@@ -211,7 +211,7 @@
 		<h2 class="section-heading">Perfil de Presidencia</h2>
 		<div class="profile-content">
 		    <div class="profile-image">
-			<img src="images/jose-alejandro-guerrero.png" alt="José Alejandro Guerrero" class="president-img">
+			<img src="../images/jose-alejandro-guerrero.png" alt="José Alejandro Guerrero" class="president-img">
 		    </div>
 		    <div class="profile-info">
 			<h3 class="president-name">José Alejandro Guerrero</h3>
