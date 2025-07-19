@@ -273,9 +273,9 @@
                     <h4>Nosotros</h4>
                     <ul>
                         <li><a href="food/quienes-somos.jsp">Quiénes somos</a></li>
-                        <li><a href="#">Proveedores</a></li>
+                        <li><a href="food/proveedores.jsp">Proveedores</a></li>
                         <li><a href="#">Educación financiera</a></li>
-                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
                         <li><a href="#">Licitación de seguros</a></li>
                     </ul>
                 </div>
