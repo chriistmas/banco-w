@@ -57,25 +57,25 @@
                 <li class="dropdown">
                     <a href="#">Productos y servicios <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Créditos</a></li>
-                        <li><a href="#">Tarjeta de crédito</a></li>
-                        <li><a href="#">Productos de ahorro e inversión</a></li>
-                        <li><a href="#">Giros internacionales</a></li>
-                        <li><a href="#">Seguros</a></li>
+                        <li><a href="proysrv/creditos.jsp">Créditos</a></li>
+                        <li><a href="proysrv/tarjeta_credito.jsp">Tarjeta de crédito</a></li>
+                        <li><a href="proysrv/ahorro-inversion.jsp">Productos de ahorro e inversión</a></li>
+                        <li><a href="proysrv/giros-internacionales.jsp">Giros internacionales</a></li>
+                        <li><a href="proysrv/seguros.jsp">Seguros</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Atención</a></li>
-                        <li><a href="#">Información</a></li>
+                        <li><a href="consumidor-financiero/atencion.jsp">Atención</a></li>
+                        <li><a href="consumidor-financiero/informacion.jsp">Información</a></li>
                         <li><a href="#">Educación financiera</a></li>
                     </ul>
                         </li>	
                 <li class="dropdown">
                     <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Refiere y gana</a></li>
+                        <li><a href="comunidad/refiere-gana.jsp">Refiere y gana</a></li>
                     </ul>
                 </li>
 
