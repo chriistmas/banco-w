@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco W - Página Principal</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/licitacion-seguros.css">
 </head>
 <body>
     <!-- Updated Header -->
@@ -105,165 +105,115 @@
 
     <!-- Enhanced Hero Section -->
     <main class="main-content">
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>¡Hola<span id="user-name-display"></span>!</h1>
-                    <p>Descubre todas las soluciones en Crédito, Ahorro e Inversión que tenemos para ti en el Banco W.</p>
-                </div>
-                <div class="hero-image">
-                    <img src="images/hero-people.png" alt="Personas felices" class="hero-img">
-                </div>
-            </div>
+	<!-- Page Header -->
+	<div class="page-header">
+	    <h1>Licitación Seguros</h1>
+	</div>
 
-            <div class="hero-cards">
-                <div class="hero-card">
-                    <span class="card-icon">💳</span>
-                    <span class="card-title">Pago tarjeta de crédito</span>
-                </div>
-                <div class="hero-card">
-                    <span class="card-icon">📊</span>
-                    <span class="card-title">CDT digital</span>
-                </div>
-                <div class="hero-card">
-                    <span class="card-icon">📈</span>
-                    <span class="card-title">Giros internacionales</span>
-                </div>
-            </div>
-        </section>
-	
+	<!-- Listings Container -->
+	<div class="listings-container">
+	    <!-- Public Listings (Teal/Cyan) -->
+	    <div class="listing-item public" onclick="openListing('271')">
+		<div class="listing-content">
+		    Licitación pública No. 271 Seguro de Vida Grupo Deudor asociado a microcrédito y/o mipyme
+		</div>
+	    </div>
+	    
+	    <div class="listing-item public" onclick="openListing('272')">
+		<div class="listing-content">
+		    Licitación pública No. 272 Seguro de vida grupo deudor asociados a créditos y microcréditos con garantía hipotecaria
+		</div>
+	    </div>
+	    
+	    <div class="listing-item public" onclick="openListing('288')">
+		<div class="listing-content">
+		    Licitación pública No. 288 Seguros de vida grupo deudores asociados a créditos y Microcréditos con garantía hipotecaria
+		</div>
+	    </div>
+	    
+	    <div class="listing-item public" onclick="openListing('315')">
+		<div class="listing-content">
+		    Licitación pública No. 315 Seguros asociados a créditos y microcréditos con garantía hipotecaria
+		</div>
+	    </div>
+	    
+	    <div class="listing-item public" onclick="openListing('322')">
+		<div class="listing-content">
+		    Licitación pública No. 322 Seguros asociados a créditos y microcréditos con garantía hipotecaria
+		</div>
+	    </div>
+	    
+	    <div class="listing-item public" onclick="openListing('331')">
+		<div class="listing-content">
+		    Licitación pública No. 331 Seguro de vida grupo deudor asociados a créditos y microcréditos con garantía hipotecaria
+		</div>
+	    </div>
+	    
+	    <!-- Private Listings (Orange) -->
+	    <div class="listing-item private" onclick="openListing('101')">
+		<div class="listing-content">
+		    Convocatoria privada No. 101 Manejo de las Pólizas Todo Riesgo y Vida Deudores del producto Inmueble Productivo
+		</div>
+	    </div>
+	    
+	    <div class="listing-item private" onclick="openListing('118')">
+		<div class="listing-content">
+		    Convocatoria privada No. 118 Póliza Incendio Clientes Deudores
+		</div>
+	    </div>
+	    
+	    <div class="listing-item private" onclick="openListing('142')">
+		<div class="listing-content">
+		    Convocatoria privada No. 142 Manejo de las Pólizas Todo Riesgo y Vida Deudores del producto Inmueble Productivo
+		</div>
+	    </div>
+	    
+	    <div class="listing-item private" onclick="openListing('198')">
+		<div class="listing-content">
+		    Convocatoria pública No. 198 de Seguros asociados a créditos y microcréditos con garantía Hipotecaria
+		</div>
+	    </div>
+	    
+	    <div class="listing-item private" onclick="openListing('214')">
+		<div class="listing-content">
+		    Convocatoria pública No. 214 de Seguros asociados a créditos y microcréditos con garantía Hipotecaria (Cobertura Póliza Incendio y Terremoto)
+		</div>
+	    </div>
+	    
+	    <div class="listing-item private" onclick="openListing('217')">
+		<div class="listing-content">
+		    Convocatoria No. 217 Selección y Contratación de Corredor de Seguros Clientes
+		</div>
+	    </div>
+	</div>
 
-	<!-- What are you looking for section -->
-        <section class="search-section">
-            <div class="container">
-                <h2>¿Qué estás buscando?</h2>
-                <div class="search-content">
-                    <div class="search-text">
-                        <div class="search-category">
-                            <h3>Seguros</h3>
-                            <p>Protégete a ti y a los que más quieres con nuestros seguros. Haz que tu futuro sea tranquilo, seguro y sin preocupaciones cada día, sin dolor y sin debilidad.</p>
-                            <ul>
-                                <li>Asistente 24/7</li>
-                                <li>Planes personalizados y flexibles</li>
-                            </ul>
-                            <button class="btn btn-primary">Conoce más</button>
-                        </div>
-                    </div>
-                    <div class="search-image">
-                        <img src="images/insurance-couple.webp" alt="Pareja feliz" class="search-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Products section -->
-        <section class="products-section">
-            <div class="container">
-                <h2>Descubre los productos favoritos</h2>
-                <div class="products-grid">
-                    <div class="product-main">
-                        <div class="product-card billetera">
-                            <h3>Nuestras novedades</h3>
-                            <div class="billetera-logo">Billetera W</div>
-                            <p>Administra tus finanzas sin cobrar por pagos ni transferencias LULO.</p>
-                            <button class="btn btn-primary">Descarga Billetera W</button>
-                            <img src="images/billetera-woman.webp" alt="Mujer con billetera" class="product-img">
-                        </div>
-                    </div>
-                    <div class="product-sidebar">
-                        <h3>Lo más buscado</h3>
-                        <div class="product-item giros">
-                            <span>Giros internacionales</span>
-                            <i class="arrow-right"></i>
-                        </div>
-                        <div class="product-item canales">
-                            <span>Canales de atención</span>
-                            <i class="arrow-right"></i>
-                        </div>
-                        <div class="product-item creditos">
-                            <span>Créditos para ti</span>
-                            <i class="arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured articles -->
-        <section class="articles-section">
-            <div class="container">
-                <h2>Artículos destacados</h2>
-                <div class="articles-grid">
-                    <article class="article-card">
-                        <img src="images/article1.png" alt="Artículo 1" class="article-img">
-                        <div class="article-content">
-                            <h3>Fraud algo a lo negativo</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </article>
-                    <article class="article-card">
-                        <img src="images/article2.png" alt="Artículo 2" class="article-img">
-                        <div class="article-content">
-                            <h3>Programa de Apoyo al Docente Nominal (PADN)</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </article>
-                    <article class="article-card">
-                        <img src="images/article3.png" alt="Artículo 3" class="article-img">
-                        <div class="article-content">
-                            <h3>Gastos emocionales</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Club del Ahorro -->
-        <section class="club-ahorro">
-            <div class="container">
-                <div class="club-content">
-                    <div class="club-text">
-                        <h2>Club del Ahorro</h2>
-                        <p>Únete a nuestro club y ahorra hoy con los beneficios del Club del Ahorro y obtén beneficios exclusivos con nosotros aprovecha durante Edición Colombia.</p>
-                        <div class="club-prize">
-                            <span class="prize-text">PREMIAMOS CON</span>
-                            <span class="prize-amount">$1.500.000</span>
-                        </div>
-                        <button class="btn btn-primary">¡Empieza ahorrando hoy!</button>
-                    </div>
-                    <div class="club-image">
-                        <img src="images/club-couple.jpg" alt="Pareja del club" class="club-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Unique products -->
-        <section class="unique-products">
-            <div class="container">
-                <h2>Creamos productos únicos pensando en tus necesidades</h2>
-                <div class="unique-content">
-                    <div class="unique-image">
-                        <img src="images/devices.webp" alt="Dispositivos" class="devices-img">
-                    </div>
-                    <div class="unique-grid">
-                        <div class="unique-item">Crédito CRA</div>
-                        <div class="unique-item">Crédito APP</div>
-                        <div class="unique-item">CDT Súper</div>
-                        <div class="unique-item">Billetera W</div>
-                        <div class="unique-item">Crédito Vehículo</div>
-                        <div class="unique-item">Club del Ahorro</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Rest of the existing sections (Search, Products, Articles, Club, Unique Products) -->
-        <!-- ... (keep all existing sections from original index.jsp) ... -->
-
+	<script>
+	    function openListing(listingNumber) {
+		// Simulate opening a specific listing
+		alert('Abriendo licitación/convocatoria No. ' + listingNumber);
+		
+		// In a real application, this would redirect to a detailed view
+		// window.location.href = 'licitacion-detalle.jsp?id=' + listingNumber;
+		
+		// Or make an AJAX call to load listing details
+		// loadListingDetails(listingNumber);
+	    }
+	    
+	    // Optional: Add keyboard navigation
+	    document.addEventListener('keydown', function(e) {
+		if (e.key === 'Enter' && document.activeElement.classList.contains('listing-item')) {
+		    document.activeElement.click();
+		}
+	    });
+	    
+	    // Make listing items focusable for accessibility
+	    document.querySelectorAll('.listing-item').forEach(function(item, index) {
+		item.setAttribute('tabindex', '0');
+		item.setAttribute('role', 'button');
+		item.setAttribute('aria-label', 'Licitación número ' + (index + 1));
+	    });
+	</script>
     </main>
-
     
     <!-- Footer -->
     <footer class="footer">
@@ -276,7 +226,7 @@
                         <li><a href="food/proveedores.jsp">Proveedores</a></li>
                         <li><a href="#">Educación financiera</a></li>
                         <li><a href="food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
-                        <li><a href="food/licitacion-seguros.jsp">Licitación de seguros</a></li>
+                        <li><a href="#">Licitación de seguros</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
