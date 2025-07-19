@@ -43,7 +43,7 @@
                 <li class="dropdown">
                     <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="../food/clienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="../food/quienes-somos.jsp">Quiénes somos</a></li>
                         <li><a href="#">Fundación</a></li>
                         <li><a href="#">WWB Colombia</a></li>
                         <li><a href="#">Trabaja con nosotros</a></li>
