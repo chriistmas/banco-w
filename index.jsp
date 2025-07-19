@@ -69,7 +69,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="consumidor-financiero/atencion.jsp">Atención</a></li>
                         <li><a href="consumidor-financiero/informacion.jsp">Información</a></li>
-                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="consumidor-financiero/educacion-financiera.jsp">Educación financiera</a></li>
                     </ul>
                         </li>	
                 <li class="dropdown">
@@ -82,20 +82,20 @@
                 <li class="dropdown">
                     <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Documentación societaria</a></li>
-                        <li><a href="#">Accionistas</a></li>
-                        <li><a href="#">Junta directiva y alta gerencia</a></li>
-                        <li><a href="#">Información relevante</a></li>
-                        <li><a href="#">Información financiera</a></li>
-                        <li><a href="#">Documentación de gobierno corporativo</a></li>
+			<li><a href="inversionista/documentacion.jsp">Documentación societaria</a></li>
+			<li><a href="inversionista/accionistas.jsp">Accionistas</a></li>
+			<li><a href="inversionista/junta.jsp">Junta directiva y alta gerencia</a></li>
+			<li><a href="inversionista/relevante.jsp">Información relevante</a></li>
+			<li><a href="inversionista/financiera.jsp">Información financiera</a></li>
+			<li><a href="inversionista/gobierno.jsp">Documentación de gobierno corporativo</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown">
                     <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Canales presenciales</a></li>
-                        <li><a href="#">Canales no presenciales</a></li>
+			<li><a href="canales/presenciales.jsp">Canales presenciales</a></li>
+			<li><a href="canales/nopresenciales.jsp">Canales no presenciales</a></li>
                     </ul>
                 </li>
             </ul>
