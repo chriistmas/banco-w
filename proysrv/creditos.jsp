@@ -128,7 +128,7 @@
                 <img src="../images/gotahorro.png" alt="Gotahorro">
                 <h3>Gotahorro</h3>
                 <p>Te brinda acceso fácil a préstamos para que impulses tu negocio.</p>
-                <a href="ruta_del_producto.jsp" class="btn btn-primary">¡Conoce más!</a>
+                <a href="${pageContext.request.contextPath}/proysrv/creditos_sub/gotahorro.jsp" class="btn btn-primary">¡Conoce más!</a>
             </div>
             <div class="credit-card">
                 <img src="../images/credito-yo-construyo.png" alt="Yo construyo">
