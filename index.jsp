@@ -69,7 +69,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="consumidor-financiero/atencion.jsp">Atención</a></li>
                         <li><a href="consumidor-financiero/informacion.jsp">Información</a></li>
-                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="consumidor-financiero/educacion-financiera.jsp">Educación financiera</a></li>
                     </ul>
                         </li>	
                 <li class="dropdown">
