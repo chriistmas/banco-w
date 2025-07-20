@@ -293,11 +293,11 @@
                 <div class="footer-section">
                     <h4>Ayuda</h4>
                     <ul>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Tasas y tarifas</a></li>
-                        <li><a href="#">Comunicados de prensa</a></li>
-                        <li><a href="#">PORS</a></li>
-                        <li><a href="#">Defensoría del Consumidor Financiero</a></li>
+                        <li><a href="ayuda/preguntas-frecuentes.jsp">Preguntas frecuentes</a></li>
+                        <li><a href="ayuda/tasas-tarifas.jsp">Tasas y tarifas</a></li>
+                        <li><a href="ayuda/sala-prensa.jsp">Comunicados de prensa</a></li>
+                        <li><a href="ayuda/pqrs.jsp">PORS</a></li>
+                        <li><a href="https://defensorialg.com.co/">Defensoría del Consumidor Financiero</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
