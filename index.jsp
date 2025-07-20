@@ -44,13 +44,13 @@
                     <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="../food/quienes-somos.jsp">Quiénes somos</a></li>
-                        <li><a href="#">Fundación WWB Colombia</a></li>
-                        <li><a href="#">Trabaja con nosotros</a></li>
-                        <li><a href="#">Sala de prensa</a></li>
-                        <li><a href="#">Línea de transparencia</a></li>
-                        <li><a href="#">Gestión Sostenible</a></li>
-                        <li><a href="#">Notificaciones Judiciales</a></li>
-                        <li><a href="#">Licitación de seguros</a></li>
+                        <li><a href="acerca-nosotros/fundacion-wwb-colombia.html">Fundación WWB Colombia</a></li>
+                        <li><a href="../food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
+                        <li><a href="acerca-nosotros/sala-de-prensa.html">Sala de prensa</a></li>
+                        <li><a href="acerca-nosotros/linea-de-transparencia.html">Línea de transparencia</a></li>
+                        <li><a href="acerca-nosotros/gestion-sostenible.html">Gestión Sostenible</a></li>
+                        <li><a href="acerca-nosotros/notificaciones-judiciales.html">Notificaciones Judiciales</a></li>
+                        <li><a href="../food/licitacion-seguros.jsp">Licitación de seguros</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
