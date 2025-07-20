@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sala de prensa • Banco W</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <style>
+    /* Reset & Base */
+    * { box-sizing: border-box; margin:0; padding:0 }
+    body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    }
+    .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    /* Hero de prensa */
+    .press-hero {
+    background: linear-gradient(to right, #00b2b8 0%, #00b2b8 50%, #fff 50%, #fff 100%);
+    }
+    .breadcrumb {
+    display:flex;
+    align-items:center;
+    font-size:0.9rem;
+    color:#fff;
+    padding:1rem 0;
+    }
+    .breadcrumb a, .breadcrumb span {
+    color:#fff;
+    text-decoration:none;
+    }
+    .press-hero__inner {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    padding:2rem 0 4rem;
+    }
+    .press-hero__image img {
+    width:100%;
+    display:block;
+    }
+    .press-hero__text {
+    padding:0 2rem;
+    }
+    .press-hero__text h1 {
+    font-size:2.5rem;
+    color:#555;
+    margin-bottom:0.5rem;
+    }
+    .press-hero__text p {
+    font-size:1rem;
+    color:#666;
+    }
+
+    /* Pestañas */
+    .press-tabs {
+    margin-top:-2rem;
+    }
+    .press-tabs ul {
+    display:flex;
+    list-style:none;
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    border-radius:8px;
+    overflow:hidden;
+    }
+    .press-tabs li {
+    flex:1;
+    text-align:center;
+    }
+    .press-tabs a {
+    display:block;
+    padding:1rem;
+    text-decoration:none;
+    color:#666;
+    font-weight:500;
+    }
+    .press-tabs .active a {
+    color:#00b2b8;
+    border-bottom:3px solid #00b2b8;
+    }
+
+    /* Boletín */
+    .press-bulletin {
+    padding:3rem 0;
+    }
+    .bulletin {
+    background:#00b2b8;
+    color:#fff;
+    border-radius:8px;
+    padding:2rem;
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+    }
+    .bulletin img {
+    width:48px;
+    }
+    .bulletin-text h2 {
+    margin-bottom:0.5rem;
+    font-size:1.5rem;
+    }
+    .bulletin-text p {
+    font-size:1rem;
+    }
+
+    /* Contacto prensa */
+    .press-contact {
+    padding-bottom:4rem;
+    }
+    .contact-card {
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 4px 20px rgba(0,178,184,0.2);
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    padding:2rem;
+    }
+    .contact-card img {
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border-radius:50%;
+    }
+    .contact-info h3 {
+    margin-bottom:0.5rem;
+    color:#333;
+    }
+    .contact-name {
+    margin-bottom:0.25rem;
+    color:#666;
+    font-size:1rem;
+    }
+    .contact-role {
+    margin-bottom:1rem;
+    color:#00b2b8;
+    }
+    .contact-buttons a {
+    display:inline-block;
+    background:#00b2b8;
+    color:#fff;
+    padding:0.5rem 1rem;
+    border-radius:4px;
+    text-decoration:none;
+    margin-right:1rem;
+    font-size:0.95rem;
+    }
+
+
+  </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Banco</span>
+                    <div class="logo-w">W</div>
+                </div>
+                
+                <div class="nav-center">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
+                    </div>
+                </div>
+                
+                <div class="nav-buttons">
+                    <div class="office-selector">
+                        <span>💼</span>
+                        <span>Pagos en línea</span>
+                        <span>▶</span>
+                    </div>
+                    <button class="btn btn-login">Entrar</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li class="active"><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../food/quienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="#">Fundación</a></li>
+                        <li><a href="fundacion-wwb-colombia.html">WWB Colombia</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Sala de prensa</a></li>
+                        <li><a href="#">Línea de transparencia</a></li>
+                        <li><a href="#">Gestión Sostenible</a></li>
+                        <li><a href="#">Notificaciones Judiciales</a></li>
+                        <li><a href="#">Licitación de seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Productos y servicios <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../proysrv/creditos.jsp">Créditos</a></li>
+                        <li><a href="../proysrv/tarjeta_credito.jsp">Tarjeta de crédito</a></li>
+                        <li><a href="../proysrv/ahorro-inversion.jsp">Productos de ahorro e inversión</a></li>
+                        <li><a href="../proysrv/giros-internacionales.jsp">Giros internacionales</a></li>
+                        <li><a href="../proysrv/seguros.jsp">Seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../consumidor-financiero/atencion.jsp">Atención</a></li>
+                        <li><a href="../consumidor-financiero/informacion.jsp">Información</a></li>
+                        <li><a href="../consumidor-financiero/educacion-financiera.jsp">Educación financiera</a></li>
+                    </ul>
+                        </li>	
+                <li class="dropdown">
+                    <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="comunidad/refiere-gana.jsp">Refiere y gana</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href=".../inversionista/documentacion.jsp">Documentación societaria</a></li>
+                      <li><a href=".../inversionista/accionistas.jsp">Accionistas</a></li>
+                      <li><a href=".../inversionista/junta.jsp">Junta directiva y alta gerencia</a></li>
+                      <li><a href=".../inversionista/relevante.jsp">Información relevante</a></li>
+                      <li><a href=".../inversionista/financiera.jsp">Información financiera</a></li>
+                      <li><a href=".../inversionista/gobierno.jsp">Documentación de gobierno corporativo</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href=".../canales/presenciales.jsp">Canales presenciales</a></li>
+                        <li><a href=".../canales/nopresenciales.jsp">Canales no presenciales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <!-- Hero de Sala de prensa -->
+        <section class="press-hero">
+          <div class="breadcrumb container">
+            <img src="images/icon-home.svg" alt="Home"> 
+            <a href="/">Inicio</a> › 
+            <span>Blog</span>
+          </div>
+          <div class="press-hero__inner container">
+            <div class="press-hero__image">
+              <img src="assets/sala-prensa.png" alt="Oficina de prensa">
+            </div>
+            <div class="press-hero__text">
+              <h1>Sala de prensa</h1>
+              <p>
+                Infórmate de todas las noticias y novedades del Banco W, acá encontrarás artículos  
+                que te ayudarán a mantenerte al tanto.
+              </p>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Pestañas estáticas -->
+        <section class="press-tabs container">
+          <ul>
+            <li><a href="#">Publicaciones en medios</a></li>
+            <li><a href="#">Comunicados de prensa</a></li>
+            <li class="active"><a href="#">Boletín informativo</a></li>
+          </ul>
+        </section>
+    
+        <!-- Boletín informativo -->
+        <section class="press-bulletin container">
+          <div class="bulletin">
+            <img src="assets/file-pdf.svg" alt="Boletín informativo">
+            <div class="bulletin-text">
+              <h2>Boletín informativo</h2>
+              <p>Julio - Agosto - Septiembre</p>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Contacto Oficina de Prensa -->
+        <section class="press-contact container">
+          <div class="contact-card">
+            <img src="assets/diana.png" alt="Diana Lucía Fernández Lemos">
+            <div class="contact-info">
+              <h3>Contacto Oficina de Prensa Banco W</h3>
+              <p class="contact-name">Diana Lucía Fernández Lemos</p>
+              <p class="contact-role">Jefe de Comunicaciones Corporativas</p>
+              <div class="contact-buttons">
+                <a href="mailto:dfernandez@bancow.com.co">dfernandez@bancow.com.co</a>
+                <a href="tel:+602608399910435">T. (602) 6083999 ext.: 10435</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="food/quienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="food/proveedores.jsp">Proveedores</a></li>
+                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
+                        <li><a href="food/licitacion-seguros.jsp">Licitación de seguros</a></li>
+      <li><a href="food/proteccion-datos.jsp">Política de protección de datos</a></li>
+    
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Canales de atención</h4>
+                    <ul>
+                        <li><a href="#">Oficinas</a></li>
+                        <li><a href="#">App móvil</a></li>
+                        <li><a href="#">Línea nacional gratuita</a></li>
+                        <li><a href="#">Corresponsales bancarios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="ayuda/preguntas-frecuentes.jsp">Preguntas frecuentes</a></li>
+                        <li><a href="ayuda/tasas-tarifas.jsp">Tasas y tarifas</a></li>
+                        <li><a href="ayuda/sala-prensa.jsp">Comunicados de prensa</a></li>
+                        <li><a href="ayuda/pqrs.jsp">PORS</a></li>
+                        <li><a href="https://defensorialg.com.co/">Defensoría del Consumidor Financiero</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Síguenos y contáctanos</h4>
+                    <div class="contact-info">
+                        <p>01 8000 5156566</p>
+                        <p>Celular -67 323 5996557</p>
+                        <p>Call (602) 4896636</p>
+                        <p>Bogotá (601) 7433638</p>
+                        <p>Medellín (604) 6048644</p>
+                    </div>
+                    <div class="footer-legal">
+                        <p>Política de protección de datos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

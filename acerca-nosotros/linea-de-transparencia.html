@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Línea de transparencia • Banco W</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <style>
+    /* Reset & Base */
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    }
+    .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    /* Hero */
+    .transparency-hero {
+    padding: 3rem 0 1rem;
+    background: #fff;
+    }
+    .transparency-hero h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #555;
+    }
+
+    /* Vídeo */
+    .transparency-video {
+    padding: 1rem 0 3rem;
+    background: #f0f6fb;
+    }
+    .video-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,178,184,0.2);
+    }
+    .video-card video {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+    /* Información */
+    .transparency-info {
+    padding: 2rem 0 4rem;
+    background: #fff;
+    }
+    .transparency-info p {
+    max-width: 800px;
+    margin: 1rem auto;
+    color: #666;
+    }
+    .link-teal {
+    color: #00b2b8;
+    text-decoration: none;
+    font-weight: 500;
+    }
+    .link-teal:hover {
+    text-decoration: underline;
+    }
+
+    /* Contactos */
+    .contacts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    }
+    .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 350px;
+    }
+    .icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .icon-phone {
+    background: #9453d1;
+    }
+    .icon-email {
+    background: #00b2b8;
+    }
+    .icon img {
+    width: 32px;
+    height: 32px;
+    }
+    .contact-text h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+    color: #333;
+    }
+    .contact-text p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    }
+
+  </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Banco</span>
+                    <div class="logo-w">W</div>
+                </div>
+                
+                <div class="nav-center">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
+                    </div>
+                </div>
+                
+                <div class="nav-buttons">
+                    <div class="office-selector">
+                        <span>💼</span>
+                        <span>Pagos en línea</span>
+                        <span>▶</span>
+                    </div>
+                    <button class="btn btn-login">Entrar</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li class="active"><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../food/quienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="#">Fundación</a></li>
+                        <li><a href="fundacion-wwb-colombia.html">WWB Colombia</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Sala de prensa</a></li>
+                        <li><a href="#">Línea de transparencia</a></li>
+                        <li><a href="#">Gestión Sostenible</a></li>
+                        <li><a href="#">Notificaciones Judiciales</a></li>
+                        <li><a href="#">Licitación de seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Productos y servicios <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../proysrv/creditos.jsp">Créditos</a></li>
+                        <li><a href="../proysrv/tarjeta_credito.jsp">Tarjeta de crédito</a></li>
+                        <li><a href="../proysrv/ahorro-inversion.jsp">Productos de ahorro e inversión</a></li>
+                        <li><a href="../proysrv/giros-internacionales.jsp">Giros internacionales</a></li>
+                        <li><a href="../proysrv/seguros.jsp">Seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../consumidor-financiero/atencion.jsp">Atención</a></li>
+                        <li><a href="../consumidor-financiero/informacion.jsp">Información</a></li>
+                        <li><a href="../consumidor-financiero/educacion-financiera.jsp">Educación financiera</a></li>
+                    </ul>
+                        </li>	
+                <li class="dropdown">
+                    <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="comunidad/refiere-gana.jsp">Refiere y gana</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href=".../inversionista/documentacion.jsp">Documentación societaria</a></li>
+                      <li><a href=".../inversionista/accionistas.jsp">Accionistas</a></li>
+                      <li><a href=".../inversionista/junta.jsp">Junta directiva y alta gerencia</a></li>
+                      <li><a href=".../inversionista/relevante.jsp">Información relevante</a></li>
+                      <li><a href=".../inversionista/financiera.jsp">Información financiera</a></li>
+                      <li><a href=".../inversionista/gobierno.jsp">Documentación de gobierno corporativo</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href=".../canales/presenciales.jsp">Canales presenciales</a></li>
+                        <li><a href=".../canales/nopresenciales.jsp">Canales no presenciales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <!-- Título -->
+    <section class="transparency-hero">
+      <div class="container">
+        <h1>Línea de transparencia</h1>
+      </div>
+    </section>
+
+    <!-- Vídeo explicativo -->
+    <section class="transparency-video">
+      <div class="container">
+        <div class="video-card">
+          <video controls>
+            <source src="assets/Linea_de_transparencia.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Descripción y enlaces -->
+    <section class="transparency-info">
+      <div class="container">
+        <p>
+          Es un medio de denuncia para que los colaboradores o las personas externas puedan informar al Banco la ocurrencia de  
+          conductas irregulares y comportamientos que van en contra de las reglas de conducta, las normas y los valores  
+          institucionales. Este es un canal confidencial y anónimo para tu protección.
+        </p>
+        <p>
+          <a href="#" class="link-teal">Haz clic aquí</a> para conocer más detalles de este canal como categorías de denuncia, medios  
+          para comunicarse, esquema de funcionamiento y recomendaciones al usar este medio. Para conocer información de nuestro  
+          Código de Ética, Conducta, Régimen Sancionatorio del Banco W puedes conocerlos al  
+          <a href="#" class="link-teal">descargar PDF</a>.
+        </p>
+
+        <!-- Contactos -->
+        <div class="contacts-grid">
+          <div class="contact-item">
+            <div class="icon icon-phone">
+              <img src="assets/phone.svg" alt="Teléfono">
+            </div>
+            <div class="contact-text">
+              <h3>Línea Gratuita</h3>
+              <p>01 8000 117744</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon icon-email">
+              <img src="assets/mail.svg" alt="Correo">
+            </div>
+            <div class="contact-text">
+              <h3>Correo Electrónico</h3>
+              <p>lineadetransparencia@bancow.com.co</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="food/quienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="food/proveedores.jsp">Proveedores</a></li>
+                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
+                        <li><a href="food/licitacion-seguros.jsp">Licitación de seguros</a></li>
+                        <li><a href="food/proteccion-datos.jsp">Política de protección de datos</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Canales de atención</h4>
+                    <ul>
+                        <li><a href="#">Oficinas</a></li>
+                        <li><a href="#">App móvil</a></li>
+                        <li><a href="#">Línea nacional gratuita</a></li>
+                        <li><a href="#">Corresponsales bancarios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="ayuda/preguntas-frecuentes.jsp">Preguntas frecuentes</a></li>
+                        <li><a href="ayuda/tasas-tarifas.jsp">Tasas y tarifas</a></li>
+                        <li><a href="ayuda/sala-prensa.jsp">Comunicados de prensa</a></li>
+                        <li><a href="ayuda/pqrs.jsp">PORS</a></li>
+                        <li><a href="https://defensorialg.com.co/">Defensoría del Consumidor Financiero</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Síguenos y contáctanos</h4>
+                    <div class="contact-info">
+                        <p>01 8000 5156566</p>
+                        <p>Celular -67 323 5996557</p>
+                        <p>Call (602) 4896636</p>
+                        <p>Bogotá (601) 7433638</p>
+                        <p>Medellín (604) 6048644</p>
+                    </div>
+                    <div class="footer-legal">
+                        <p>Política de protección de datos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

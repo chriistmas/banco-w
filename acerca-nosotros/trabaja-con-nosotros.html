@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banco W • Carreras</title>
+  <style>
+    /* Reset & Base */
+    * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    }
+    body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    }
+    .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    /* Header */
+    .header__top {
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    }
+    .header__top .container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 0;
+    }
+    .header__socials a img {
+    width: 20px;
+    margin-left: 1rem;
+    }
+
+    .header__middle {
+    background: #ff6600;
+    }
+    .header__middle-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    }
+    .logo img {
+    height: 50px;
+    }
+    .search {
+    display: flex;
+    flex: 1;
+    margin: 0 2rem;
+    }
+    .search input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    }
+    .search button {
+    background: #fff;
+    border: none;
+    padding: 0 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    }
+    .btn-login {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    }
+
+    .header__nav {
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    }
+    .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0.75rem 0;
+    }
+    .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    }
+
+    /* Hero */
+    .hero-careers img {
+    width: 100%;
+    display: block;
+    }
+
+    /* Tagline */
+    .tagline {
+    text-align: center;
+    padding: 2rem 0;
+    }
+    .tagline p {
+    font-size: 1.5rem;
+    color: #ff6600;
+    }
+    .tagline hr {
+    margin-top: 1rem;
+    border: none;
+    height: 2px;
+    background: #eaeaea;
+    }
+
+    /* Áreas */
+    .areas {
+    padding: 2rem 0 3rem;
+    }
+    .areas h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    }
+    .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+    }
+    .area-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .area-card__header {
+    background: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    }
+    .area-card__header img {
+    width: 40px;
+    margin-bottom: 1rem;
+    }
+    .area-card__body {
+    padding: 1.5rem;
+    color: #666;
+    font-size: 0.95rem;
+    }
+
+    /* Mensaje estático */
+    .cta {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    }
+    .cta-text {
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    color: #555;
+    }
+    .highlight {
+    color: #ff6600;
+    font-weight: 600;
+    }
+    .cta-heading {
+    color: #ff6600;
+    font-size: 1.25rem;
+    }
+
+    /* Valores estático */
+    .values-static {
+    background: #f0f6fb;
+    padding: 3rem 0;
+    }
+    .values-static__inner {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    }
+    .values-list-static {
+    list-style: none;
+    flex: 1;
+    }
+    .values-list-static li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #333;
+    padding: 0.75rem 0;
+    }
+    .values-list-static img {
+    width: 24px;
+    }
+    .values-card {
+    flex: 2;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+    }
+    .values-card img {
+    width: 100%;
+    display: block;
+    }
+    .values-card__content {
+    padding: 1.5rem;
+    }
+    .values-card__content h3 {
+    color: #114494;
+    margin-bottom: 0.5rem;
+    }
+    .values-card__content p {
+    color: #555;
+    font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .footer {
+    background: #fff;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    }
+    .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    }
+    .footer__logo {
+    height: 40px;
+    }
+    .footer__copy {
+    color: #666;
+    font-size: 0.85rem;
+    }
+    .footer__copy a {
+    color: #333;
+    text-decoration: none;
+    }
+    .footer__copy img {
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <!-- 1. Barra de redes -->
+    <div class="header__top">
+      <div class="container">
+        <div class="header__socials">
+          <a href="#" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+          <a href="#" aria-label="X"><img src="images/icon-x.svg" alt="X"></a>
+          <a href="#" aria-label="YouTube"><img src="images/icon-youtube.svg" alt="YouTube"></a>
+          <a href="#" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+          <a href="#" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <!-- 2. Logo + búsqueda + login -->
+    <div class="header__middle">
+      <div class="container header__middle-inner">
+        <a href="/" class="logo"><img src="assets/logo-w.svg" alt="Banco W"></a>
+        <div class="search">
+          <input type="text" placeholder="Buscar por palabra clave">
+          <button aria-label="Buscar"><img src="images/icon-search.svg" alt="🔍"></button>
+        </div>
+        <a href="/login" class="btn-login"><img src="images/icon-user.svg" alt=""> Inicia sesión</a>
+      </div>
+    </div>
+    <!-- 3. Navegación -->
+    <nav class="header__nav">
+      <div class="container">
+        <ul class="nav-menu">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/registrar">Registrar Hoja de Vida</a></li>
+          <li><a href="/ofertas">Ofertas de Empleo</a></li>
+          <li><a href="/contacto">Contáctenos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-careers">
+      <img src="assets/banner-home.jpg" >
+    </section>
+
+    <!-- Tagline -->
+    <section class="tagline container">
+      <p>¡Somos un gran lugar para trabajar, <strong>solo faltas tú!</strong></p>
+      <hr>
+    </section>
+
+    <!-- Carrusel Áreas (estático) -->
+    <section class="areas container">
+      <h2>Contamos con personal en diferentes áreas:</h2>
+      <div class="areas-grid">
+        <div class="area-card">
+          <div class="area-card__header">
+            <img src="assets/maletin.png" alt="">
+            <h3>Comercial</h3>
+          </div>
+          <div class="area-card__body">
+            <p>
+              Buscamos personas dinámicas, con gran habilidad comercial e interés en comprometerse 
+              con nuestros clientes y sus necesidades de emprendimiento. Profesionales con integridad, 
+              que asesoren a nuestros clientes, conozcan sus hogares, sus negocios y su productividad.
+            </p>
+          </div>
+        </div>
+        <div class="area-card">
+          <div class="area-card__header">
+            <img src="assets/manos.png" alt="">
+            <h3>Operativo</h3>
+          </div>
+          <div class="area-card__body">
+            <p>
+              Buscamos personas alegres, cordiales y dispuestas al servicio, para manejar el contacto 
+              directo con nuestros clientes. Nuestro objetivo es construir un equipo humano especializado 
+              en brindar el mejor servicio, desde nuestras oficinas.
+            </p>
+          </div>
+        </div>
+        <div class="area-card">
+          <div class="area-card__header">
+            <img src="assets/grafica.png" alt="">
+            <h3>Administrativo</h3>
+          </div>
+          <div class="area-card__body">
+            <p>
+              Buscamos profesionales que se sumen al posicionamiento y expansión como Banco. Personas 
+              apasionadas por la estrategia financiera y administrativa de la organización; orientadas 
+              a enfocar su talento y gestión para alcanzar las metas y objetivos del Banco W.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mensaje estático -->
+    <section class="cta container">
+      <p class="cta-text">
+        Somos un Banco diferente con <span class="highlight">sentido social</span>, buscamos impactar 
+        positivamente la vida de las y los clientes, colaboradores y colaboradoras. 
+        <span class="highlight">Sentimos pasión</span> por lo que hacemos y por la manera como aportamos a la sociedad.
+      </p>
+      <h2 class="cta-heading">
+        Queremos que te sumes a vivir la mejor experiencia y hagas parte de uno de los mejores lugares 
+        para trabajar en Colombia
+      </h2>
+    </section>
+
+    <!-- Valores estático -->
+    <section class="values-static container">
+      <div class="values-static__inner">
+        <!-- Lista lateral -->
+        <ul class="values-list-static">
+          <li>
+            <img src="images/icon-bank.svg" alt="">  
+            Somos un Banco líder
+          </li>
+          <li>
+            <img src="images/icon-listen.svg" alt="">  
+            Escuchamos y construimos
+          </li>
+          <li>
+            <img src="images/icon-familia.svg" alt="">  
+            Nos interesa tu felicidad y la de tu familia
+          </li>
+          <li>
+            <img src="images/icon-develop.svg" alt="">  
+            Aquí podrás desarrollarte profesionalmente
+          </li>
+        </ul>
+        <!-- Tarjeta de contenido principal -->
+        <div class="values-card">
+          <img src="assets/cuatro.jpg" alt="Somos un Banco líder">
+          <div class="values-card__content">
+            <h3>Somos un Banco líder</h3>
+            <p>
+              Nos reconocen por facilitar productos y servicios financieros sencillos, innovadores 
+              y oportunos, de manera responsable, rentable y sostenible. 
+              <strong>Somos el Banco de las y los microempresarios colombianos.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="images/logo-w-footer.svg" alt="Banco W" class="footer__logo">
+      <div class="footer__copy">
+        <p>
+          COPYRIGHT © 2025 Leadearsearch S.A.S. Prohibida su reproducción total o parcial, así 
+          como su traducción a cualquier idioma sin autorización escrita de su titular.
+        </p>
+        <p>
+          empleo.com es un producto de Leadearsearch S.A.S. Nit. 8300651578.
+          <a href="/terminos">Términos y condiciones</a> • Powered by 
+          <img src="assets/logo.png" alt="elempleo">
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

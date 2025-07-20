@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión Sostenible • Banco W</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <style>
+
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    }
+    .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    /* Hero */
+    .hero-sustainability {
+    background-color: #9453D1;
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    }
+    .hero-sustainability h1 {
+    font-size: 2.5rem;
+    }
+
+    .video-section {
+    background: #f0f6fb;
+    padding: 2rem 0;
+    }
+
+    .video-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+  
+    .video-card video {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+    /* Texto descriptivo */
+    .text-section {
+    background: #fff;
+    padding: 2rem 0 3rem;
+    }
+    .text-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 1rem;
+    }
+
+    /* Informes de Sostenibilidad */
+    .reports-section {
+    background: #fff;
+    padding: 2rem 0 4rem;
+    }
+    .reports-section h2 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+    }
+    .reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 1.5rem;
+    }
+
+    /* Tarjetas */
+    .report-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .report-card__header {
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    }
+    .report-card__header img {
+    width: 40px;
+    }
+    .report-card__header h3 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    }
+
+    /* Colores */
+    .report-card--purple .report-card__header {
+    background-color: #9453D1;
+    }
+    .report-card--orange .report-card__header {
+    background-color: #FFB268;
+    }
+    .report-card--teal .report-card__header {
+    background-color: #00B2B8;
+    }
+
+    .report-card__footer {
+    background: #fff;
+    padding: 1rem;
+    text-align: center;
+    }
+    .report-card__footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    }
+
+  </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Banco</span>
+                    <div class="logo-w">W</div>
+                </div>
+                
+                <div class="nav-center">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
+                    </div>
+                </div>
+                
+                <div class="nav-buttons">
+                    <div class="office-selector">
+                        <span>💼</span>
+                        <span>Pagos en línea</span>
+                        <span>▶</span>
+                    </div>
+                    <button class="btn btn-login">Entrar</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li class="active"><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../food/quienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="#">Fundación</a></li>
+                        <li><a href="fundacion-wwb-colombia.html">WWB Colombia</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Sala de prensa</a></li>
+                        <li><a href="#">Línea de transparencia</a></li>
+                        <li><a href="#">Gestión Sostenible</a></li>
+                        <li><a href="#">Notificaciones Judiciales</a></li>
+                        <li><a href="#">Licitación de seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Productos y servicios <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../proysrv/creditos.jsp">Créditos</a></li>
+                        <li><a href="../proysrv/tarjeta_credito.jsp">Tarjeta de crédito</a></li>
+                        <li><a href="../proysrv/ahorro-inversion.jsp">Productos de ahorro e inversión</a></li>
+                        <li><a href="../proysrv/giros-internacionales.jsp">Giros internacionales</a></li>
+                        <li><a href="../proysrv/seguros.jsp">Seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../consumidor-financiero/atencion.jsp">Atención</a></li>
+                        <li><a href="../consumidor-financiero/informacion.jsp">Información</a></li>
+                        <li><a href="../consumidor-financiero/educacion-financiera.jsp">Educación financiera</a></li>
+                    </ul>
+                        </li>	
+                <li class="dropdown">
+                    <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="comunidad/refiere-gana.jsp">Refiere y gana</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href=".../inversionista/documentacion.jsp">Documentación societaria</a></li>
+                      <li><a href=".../inversionista/accionistas.jsp">Accionistas</a></li>
+                      <li><a href=".../inversionista/junta.jsp">Junta directiva y alta gerencia</a></li>
+                      <li><a href=".../inversionista/relevante.jsp">Información relevante</a></li>
+                      <li><a href=".../inversionista/financiera.jsp">Información financiera</a></li>
+                      <li><a href=".../inversionista/gobierno.jsp">Documentación de gobierno corporativo</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href=".../canales/presenciales.jsp">Canales presenciales</a></li>
+                        <li><a href=".../canales/nopresenciales.jsp">Canales no presenciales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  <main>
+
+    <!-- Hero -->
+    <section class="hero-sustainability">
+      <h1>Gestión Sostenible</h1>
+    </section>
+
+    <!-- Ilustración -->
+    <section class="video-section">
+        <div class="container">
+          <div class="video-card">
+            <video controls poster="images/sustainability-poster.jpg">
+              <source src="assets/(Aliados) Balance de nuestra gestion Sostenible en 2023.mp4" type="video/mp4">
+              Tu navegador no soporta la etiqueta video.
+            </video>
+          </div>
+        </div>
+    </section>
+
+    <!-- Texto descriptivo -->
+    <section class="text-section">
+      <div class="container">
+        <p>
+          La sostenibilidad es un pilar fundamental en nuestra organización para, además de gestionar adecuadamente los criterios 
+          ambientales, sociales y de gobernanza, movilizar iniciativas que promuevan la inclusión financiera, no solo desde la 
+          perspectiva de crédito, sino de seguros y ahorros. En Banco W estamos convencidos del impacto positivo generado a 
+          partir del préstamo a población sin acceso a la banca tradicional y la educación financiera orientada a la cultura 
+          del ahorro. Estas son herramientas efectivas para proporcionar conocimiento y recursos que mejoren el bienestar 
+          financiero y la calidad de vida de nuestros clientes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Informes de Sostenibilidad -->
+    <section class="reports-section">
+      <div class="container">
+        <h2>Informes de Sostenibilidad</h2>
+        <div class="reports-grid">
+          <div class="report-card report-card--purple">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2014</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--orange">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2015</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--teal">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2016</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--purple">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2017</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--orange">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2018</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--teal">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2019</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--purple">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2020</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--orange">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2021</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--teal">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2022</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--purple">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2023</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+          <div class="report-card report-card--orange">
+            <div class="report-card__header">
+              <img src="assets/file-pdf.svg" alt="">
+              <h3>Informe de sostenibilidad 2024</h3>
+            </div>
+            <div class="report-card__footer">
+              <a href="#">Descárgalo aquí</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="food/quienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="food/proveedores.jsp">Proveedores</a></li>
+                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
+                        <li><a href="food/licitacion-seguros.jsp">Licitación de seguros</a></li>
+                        <li><a href="food/proteccion-datos.jsp">Política de protección de datos</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Canales de atención</h4>
+                    <ul>
+                        <li><a href="#">Oficinas</a></li>
+                        <li><a href="#">App móvil</a></li>
+                        <li><a href="#">Línea nacional gratuita</a></li>
+                        <li><a href="#">Corresponsales bancarios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="ayuda/preguntas-frecuentes.jsp">Preguntas frecuentes</a></li>
+                        <li><a href="ayuda/tasas-tarifas.jsp">Tasas y tarifas</a></li>
+                        <li><a href="ayuda/sala-prensa.jsp">Comunicados de prensa</a></li>
+                        <li><a href="ayuda/pqrs.jsp">PORS</a></li>
+                        <li><a href="https://defensorialg.com.co/">Defensoría del Consumidor Financiero</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Síguenos y contáctanos</h4>
+                    <div class="contact-info">
+                        <p>01 8000 5156566</p>
+                        <p>Celular -67 323 5996557</p>
+                        <p>Call (602) 4896636</p>
+                        <p>Bogotá (601) 7433638</p>
+                        <p>Medellín (604) 6048644</p>
+                    </div>
+                    <div class="footer-legal">
+                        <p>Política de protección de datos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

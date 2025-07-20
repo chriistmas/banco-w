@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notificaciones judiciales • Banco W</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <style>
+    /* Base */
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    }
+    .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    /* Notificaciones judiciales */
+    .notifications-judiciales {
+    background-color: #00B2B8;
+    color: #fff;
+    padding: 3rem 0 4rem;
+    }
+    .notifications-judiciales h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    }
+
+    /* Línea de tiempo */
+    .timeline {
+    position: relative;
+    padding-left: 2rem;
+    }
+    .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255,255,255,0.7);
+    }
+    .timeline-item {
+    position: relative;
+    padding: 1rem 0 1rem 2rem;
+    }
+    .timeline-item + .timeline-item {
+    margin-top: 2rem;
+    }
+    .timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 1rem;
+    height: 1rem;
+    background: #00B2B8;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    }
+
+    /* Texto */
+    .timeline-item p {
+    color: rgba(255,255,255,0.95);
+    font-size: 0.95rem;
+    }
+    .timeline-item a {
+    color: #fff;
+    text-decoration: underline;
+    }
+    .timeline-item a:hover {
+    opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Banco</span>
+                    <div class="logo-w">W</div>
+                </div>
+                
+                <div class="nav-center">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
+                    </div>
+                </div>
+                
+                <div class="nav-buttons">
+                    <div class="office-selector">
+                        <span>💼</span>
+                        <span>Pagos en línea</span>
+                        <span>▶</span>
+                    </div>
+                    <button class="btn btn-login">Entrar</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li class="active"><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../food/quienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="#">Fundación</a></li>
+                        <li><a href="fundacion-wwb-colombia.html">WWB Colombia</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Sala de prensa</a></li>
+                        <li><a href="#">Línea de transparencia</a></li>
+                        <li><a href="#">Gestión Sostenible</a></li>
+                        <li><a href="#">Notificaciones Judiciales</a></li>
+                        <li><a href="#">Licitación de seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Productos y servicios <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../proysrv/creditos.jsp">Créditos</a></li>
+                        <li><a href="../proysrv/tarjeta_credito.jsp">Tarjeta de crédito</a></li>
+                        <li><a href="../proysrv/ahorro-inversion.jsp">Productos de ahorro e inversión</a></li>
+                        <li><a href="../proysrv/giros-internacionales.jsp">Giros internacionales</a></li>
+                        <li><a href="../proysrv/seguros.jsp">Seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../consumidor-financiero/atencion.jsp">Atención</a></li>
+                        <li><a href="../consumidor-financiero/informacion.jsp">Información</a></li>
+                        <li><a href="../consumidor-financiero/educacion-financiera.jsp">Educación financiera</a></li>
+                    </ul>
+                        </li>	
+                <li class="dropdown">
+                    <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="comunidad/refiere-gana.jsp">Refiere y gana</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href=".../inversionista/documentacion.jsp">Documentación societaria</a></li>
+                      <li><a href=".../inversionista/accionistas.jsp">Accionistas</a></li>
+                      <li><a href=".../inversionista/junta.jsp">Junta directiva y alta gerencia</a></li>
+                      <li><a href=".../inversionista/relevante.jsp">Información relevante</a></li>
+                      <li><a href=".../inversionista/financiera.jsp">Información financiera</a></li>
+                      <li><a href=".../inversionista/gobierno.jsp">Documentación de gobierno corporativo</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href=".../canales/presenciales.jsp">Canales presenciales</a></li>
+                        <li><a href=".../canales/nopresenciales.jsp">Canales no presenciales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  <main>
+    <section class="notifications-judiciales">
+      <div class="container">
+        <h1>Notificaciones judiciales</h1>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-icon"></span>
+            <p>
+              A través de este canal, las entidades administrativas y judiciales pueden radicar sus solicitudes  
+              de embargos y desembargos dirigidos al Banco W al correo electrónico:  
+              <a href="mailto:embargos@bancow.com.co">embargos@bancow.com.co</a>.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-icon"></span>
+            <p>
+              Si necesitas hacer una solicitud, petición o una notificación de procesos judiciales según lo  
+              establecido en el artículo 291 del Código General del Proceso y el artículo 67 del Código de  
+              Procedimiento Administrativo y de lo Contencioso Administrativo, lo puedes hacer a través del  
+              siguiente correo: <a href="mailto:correspondenciabancow@bancow.com.co">correspondenciabancow@bancow.com.co</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="food/quienes-somos.jsp">Quiénes somos</a></li>
+                        <li><a href="food/proveedores.jsp">Proveedores</a></li>
+                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
+                        <li><a href="food/licitacion-seguros.jsp">Licitación de seguros</a></li>
+                        <li><a href="food/proteccion-datos.jsp">Política de protección de datos</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Canales de atención</h4>
+                    <ul>
+                        <li><a href="#">Oficinas</a></li>
+                        <li><a href="#">App móvil</a></li>
+                        <li><a href="#">Línea nacional gratuita</a></li>
+                        <li><a href="#">Corresponsales bancarios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="ayuda/preguntas-frecuentes.jsp">Preguntas frecuentes</a></li>
+                        <li><a href="ayuda/tasas-tarifas.jsp">Tasas y tarifas</a></li>
+                        <li><a href="ayuda/sala-prensa.jsp">Comunicados de prensa</a></li>
+                        <li><a href="ayuda/pqrs.jsp">PORS</a></li>
+                        <li><a href="https://defensorialg.com.co/">Defensoría del Consumidor Financiero</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Síguenos y contáctanos</h4>
+                    <div class="contact-info">
+                        <p>01 8000 5156566</p>
+                        <p>Celular -67 323 5996557</p>
+                        <p>Call (602) 4896636</p>
+                        <p>Bogotá (601) 7433638</p>
+                        <p>Medellín (604) 6048644</p>
+                    </div>
+                    <div class="footer-legal">
+                        <p>Política de protección de datos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

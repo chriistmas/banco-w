@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiénes Somos - Banco W</title>
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* styles.css */
+  body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+ 
+  
+  /* Navegación principal */
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .logo img {
+    height: 45px;
+  }
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+  }
+  .nav-menu a {
+    color: #004b85;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+  }
+  .nav-menu a.active {
+    font-weight: 700;
+  }
+  .has-submenu:hover .submenu {
+    display: block;
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0.5rem 0;
+    min-width: 200px;
+  }
+  .submenu li {
+    padding: 0;
+  }
+  .submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+  }
+  .submenu a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #004b85;
+    margin-bottom: 0.5rem;
+  }
+  .hero .intro {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Subtítulos */
+  section h2,
+  section h4 {
+    color: #004b85;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Pillars */
+  .pillars-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .pillar {
+    flex: 1 1 calc(20% - 1rem);
+    text-align: center;
+  }
+  .pillar img {
+    max-width: 60px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Perfil de Presidencia */
+  .president-profile .profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .president-profile img {
+    width: 200px;
+    border-radius: 8px;
+  }
+  .profile-text {
+    flex: 1;
+  }
+  .profile-text h3 {
+    margin-top: 0;
+    color: #004b85;
+  }
+  .profile-text p {
+    margin-bottom: 1rem;
+  }
+  
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Banco</span>
+                <div class="logo-w">W</div>
+            </div>
+            
+            <div class="nav-center">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <div class="office-selector">
+                    <span>💼</span>
+                    <span>Pagos en línea</span>
+                    <span>▶</span>
+                </div>
+                <button class="btn btn-login">Entrar</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            <li class="active"><a href="#inicio">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Acerca de Nosotros <span class="dropdown-arrow">▼</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../food/quienes-somos.jsp">Quiénes somos</a></li>
+                    <li><a href="#">Fundación</a></li>
+                    <li><a href="fundacion-wwb-colombia.html">WWB Colombia</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Sala de prensa</a></li>
+                    <li><a href="#">Línea de transparencia</a></li>
+                    <li><a href="#">Gestión Sostenible</a></li>
+                    <li><a href="#">Notificaciones Judiciales</a></li>
+                    <li><a href="#">Licitación de seguros</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Productos y servicios <span class="dropdown-arrow">▼</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../proysrv/creditos.jsp">Créditos</a></li>
+                    <li><a href="../proysrv/tarjeta_credito.jsp">Tarjeta de crédito</a></li>
+                    <li><a href="../proysrv/ahorro-inversion.jsp">Productos de ahorro e inversión</a></li>
+                    <li><a href="../proysrv/giros-internacionales.jsp">Giros internacionales</a></li>
+                    <li><a href="../proysrv/seguros.jsp">Seguros</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Consumidor Financiero <span class="dropdown-arrow">▼</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../consumidor-financiero/atencion.jsp">Atención</a></li>
+                    <li><a href="../consumidor-financiero/informacion.jsp">Información</a></li>
+                    <li><a href="../consumidor-financiero/educacion-financiera.jsp">Educación financiera</a></li>
+                </ul>
+                    </li>	
+            <li class="dropdown">
+                <a href="#">Comunidad W <span class="dropdown-arrow">▼</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="comunidad/refiere-gana.jsp">Refiere y gana</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Atención al inversionista <span class="dropdown-arrow">▼</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href=".../inversionista/documentacion.jsp">Documentación societaria</a></li>
+                  <li><a href=".../inversionista/accionistas.jsp">Accionistas</a></li>
+                  <li><a href=".../inversionista/junta.jsp">Junta directiva y alta gerencia</a></li>
+                  <li><a href=".../inversionista/relevante.jsp">Información relevante</a></li>
+                  <li><a href=".../inversionista/financiera.jsp">Información financiera</a></li>
+                  <li><a href=".../inversionista/gobierno.jsp">Documentación de gobierno corporativo</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Canales de atención <span class="dropdown-arrow">▼</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href=".../canales/presenciales.jsp">Canales presenciales</a></li>
+                    <li><a href=".../canales/nopresenciales.jsp">Canales no presenciales</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Quiénes Somos</h1>
+      <p class="intro">
+        Somos un Banco colombiano con presencia a nivel nacional que promueve la inclusión a través de las microfinanzas y otros productos y servicios financieros.
+      </p>
+      <video class="hero-video" controls muted loop>
+        
+        <source src="assets/Conoce nuestro aporte al pais en nuestro video institucional.mp4" type="video/mp4">
+        Tu navegador no admite el elemento video.
+      </video>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section class="about">
+      <h4>Sobre nosotros</h4>
+      <p>
+        Ponemos al alcance de las personas independientes, con pequeñas empresas y que se dedican a alguna actividad productiva; productos prácticos, oportunos e innovadores en materia de crédito para negocios, ahorro, inversiones, microseguros y remesas.
+      </p>
+    </section>
+
+    <!-- Nuestro propósito -->
+    <section class="purpose">
+      <h2>Nuestro propósito</h2>
+      <p>
+        Aportar al desarrollo económico y social facilitando soluciones financieras a micronegocios y pequeñas empresas.
+      </p>
+    </section>
+
+    <!-- Valores -->
+    <section class="values">
+      <h2>Valores</h2>
+      <p>Compromiso, transparencia y respeto</p>
+    </section>
+
+    <!-- Pilares de nuestra cultura -->
+    <section class="pillars">
+      <h2>Pilares de nuestra cultura</h2>
+      <div class="pillars-grid">
+        <div class="pillar">
+          <img src="assets/check-primary.svg" alt="Principios">
+          <p>Principios</p>
+        </div>
+        <div class="pillar">
+          <img src="assets/badge-primary.svg">
+          <p>Trabajo colaborativo</p>
+        </div>
+        <div class="pillar">
+          <img src="assets/users-alt-primary.svg" alt="Clientes">
+          <p>Clientes</p>
+        </div>
+        <div class="pillar">
+          <img src="assets/favorite-primary.svg" alt="Liderazgo">
+          <p>Liderazgo</p>
+        </div>
+        <div class="pillar">
+          <img src="assets/brain-primary.svg" alt="Innovación">
+          <p>Innovación</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perfil de Presidencia -->
+    <section class="president-profile">
+      <h2>Perfil de Presidencia</h2>
+      <div class="profile">
+        <img src="assets/presidencia.png" alt="José Alejandro Guerrero">
+        <div class="profile-text">
+          <h3>José Alejandro Guerrero</h3>
+          <p>
+            Cuenta con más de 25 años de experiencia en el área financiera, administrativa, de riesgo, comercial, mercadeo y gestión Humana; desempeñándose en cargos directivos en AV Villas, Helm Bank y Bancolombia. Se destaca por sus habilidades en la dirección de grupos, planeación, organización, ejecución e implementación de estrategias administrativas y comerciales con enfoque en resultados, además de buenas relaciones interpersonales, versatilidad y adaptación al cambio.
+          </p>
+          <p><strong>Formación:</strong> Administrador de Empresas, Universidad ICESI. Especialista en Finanzas, Universidad del Valle. Dirección Estratégica Comercial, Universidad de los Andes en Bogotá.</p>
+          <p><strong>Experiencia Laboral:</strong> Banco AV Villas: Gerente Regional Región Suroccidente; Helm Bank: Vicepresidente Banca de Consumo, Vicepresidente Banca Empresarial y Pyme; Bancolombia S.A. (Bogotá): Gerente Regional Banca Empresarial y Corporativa Bogotá y Centro País; Banco Industrial Colombiano (Cali): Gerente Regional Banca Empresarial y Corporativa – Occidente País.</p>
+          <p><strong>Participación Juntas:</strong> Ex miembro de Juntas Directivas de Colcorp (Banca de Inversión Bancolombia), Almacenar, Franquicia Visa Colombia y Fondo de Empleados Helm Bank.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Nosotros</h4>
+                <ul>
+                    <li><a href="food/quienes-somos.jsp">Quiénes somos</a></li>
+                    <li><a href="food/proveedores.jsp">Proveedores</a></li>
+                    <li><a href="#">Educación financiera</a></li>
+                    <li><a href="food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
+                    <li><a href="food/licitacion-seguros.jsp">Licitación de seguros</a></li>
+  <li><a href="food/proteccion-datos.jsp">Política de protección de datos</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Canales de atención</h4>
+                <ul>
+                    <li><a href="#">Oficinas</a></li>
+                    <li><a href="#">App móvil</a></li>
+                    <li><a href="#">Línea nacional gratuita</a></li>
+                    <li><a href="#">Corresponsales bancarios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="ayuda/preguntas-frecuentes.jsp">Preguntas frecuentes</a></li>
+                    <li><a href="ayuda/tasas-tarifas.jsp">Tasas y tarifas</a></li>
+                    <li><a href="ayuda/sala-prensa.jsp">Comunicados de prensa</a></li>
+                    <li><a href="ayuda/pqrs.jsp">PORS</a></li>
+                    <li><a href="https://defensorialg.com.co/">Defensoría del Consumidor Financiero</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Síguenos y contáctanos</h4>
+                <div class="contact-info">
+                    <p>01 8000 5156566</p>
+                    <p>Celular -67 323 5996557</p>
+                    <p>Call (602) 4896636</p>
+                    <p>Bogotá (601) 7433638</p>
+                    <p>Medellín (604) 6048644</p>
+                </div>
+                <div class="footer-legal">
+                    <p>Política de protección de datos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
