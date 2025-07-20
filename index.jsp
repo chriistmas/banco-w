@@ -277,6 +277,8 @@
                         <li><a href="#">Educación financiera</a></li>
                         <li><a href="food/trabaja-con-nosotros.jsp">Trabaja con nosotros</a></li>
                         <li><a href="food/licitacion-seguros.jsp">Licitación de seguros</a></li>
+			<li><a href="food/proteccion-datos.jsp">Política de protección de datos</a></li>
+
                     </ul>
                 </div>
                 <div class="footer-section">
