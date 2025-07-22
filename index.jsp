@@ -257,10 +257,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Rest of the existing sections (Search, Products, Articles, Club, Unique Products) -->
-        <!-- ... (keep all existing sections from original index.jsp) ... -->
-
     </main>
 
     
